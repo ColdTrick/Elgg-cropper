@@ -1,0 +1,24 @@
+{
+	"name": "hypejunction/cropper",
+	"version": "0.0.0",
+	"type": "elgg-plugin",
+	"description": "Cropper for Elgg",
+	"homepage": "http://hypejunction.com",
+	"keywords": [
+		"elgg", "plugin", "image", "crop", "cropper"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Ismayil Khayredinov",
+			"email": "info@hypejunction.com"
+		}
+	],
+	"require": {
+		"bower-asset/cropper": "~2.1"
+	},
+	"require-dev": {
+		"composer/installers": "1.*"
+	}
+}
+
