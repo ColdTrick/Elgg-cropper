@@ -48,6 +48,10 @@ echo elgg_view('input/file', array(
 	),
 ));
 
+// in your action
+$coords = get_input('cover_crop_coords');
+```
+
 
 ### Notes
 
