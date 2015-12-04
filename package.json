@@ -1,12 +1,12 @@
 {
   "name": "cropper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "GPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:hypeJunction/cropper.git",
+    "url": "git@github.com:hypeJunction/Elgg-cropper.git",
     "owner": "hypeJunction",
-    "repo": "cropper"
+    "repo": "Elgg-cropper"
   },
   "devDependencies": {
     "curlrequest": "^0.3.10",
