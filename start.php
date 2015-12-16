@@ -6,7 +6,6 @@
  * @author Ismayil Khayredinov <info@hypejunction.com>
  * @copyright Copyright (c) 2015, Ismayil Khayredinov
  */
-
 require_once __DIR__ . '/autoloader.php';
 
 elgg_register_event_handler('init', 'system', 'cropper_init');
@@ -19,15 +18,35 @@ function cropper_init() {
 
 	elgg_register_plugin_hook_handler('view_vars', 'input/file', 'cropper_file_input_view_vars_hook');
 	elgg_extend_view('input/file', 'elements/input/file/cropper');
-	elgg_extend_view('elgg.css', 'input/cropper.css');
+	elgg_extend_view('css/elgg', 'input/cropper.css');
 
 	// override previously defined assets
 	elgg_unregister_css('jquery.cropper');
-	elgg_register_js('jquery.cropper', elgg_get_simplecache_url('cropper.js'));
+
+	elgg_register_simplecache_view('js/cropper.js');
+	$src = elgg_get_simplecache_url('js', 'cropper.js');
+	elgg_register_js('jquery.cropper', $src);
 	elgg_define_js('cropper', [
-		'src' => elgg_get_simplecache_url('cropper.js'),
+		'src' => $src,
 		'deps' => ['jquery'],
 	]);
+}
+
+/**
+ * Get path to vendor directory
+ * @return string
+ */
+function cropper_get_vendor_path() {
+	$plugin_root = __DIR__;
+	$root = dirname(dirname($plugin_root));
+
+	if (file_exists("$plugin_root/vendor/autoload.php")) {
+		$path = $plugin_root;
+	} else if (file_exists("$root/vendor/autoload.php")) {
+		$path = $root;
+	}
+
+	return $path;
 }
 
 /**
@@ -55,6 +74,6 @@ function cropper_file_input_view_vars_hook($hook, $type, $return, $params) {
 			$return['id'] = "elgg-file-input-$iterator";
 		}
 	}
-	
+
 	return $return;
 }

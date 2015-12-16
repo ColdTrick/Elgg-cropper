@@ -1,5 +1,5 @@
 <?php
-echo elgg_view('cropper.css');
+readfile(cropper_get_vendor_path() . '/vendor/bower-asset/cropper/dist/cropper.min.css');
 ?>
 .cropper-input-image-container {
 	position: relative;

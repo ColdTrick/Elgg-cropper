@@ -27,7 +27,7 @@ $y1 = (int) elgg_extract('y1', $vars, 0);
 $x2 = (int) elgg_extract('x2', $vars, 0);
 $y2 = (int) elgg_extract('x2', $vars, 0);
 
-if ($x2 > $x1 && $y2 > $y2) {
+if ($x2 > $x1 && $y2 > $y1) {
 	$x = $x1;
 	$y = $y1;
 	$width = $x2 - $x1;

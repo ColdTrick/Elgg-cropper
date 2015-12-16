@@ -17,10 +17,10 @@ define(function (require) {
 			$img.cropper({
 				aspectRatio: $(element).data('ratio'),
 				data: $img.data(),
-				done: function (data) {
+				crop: function (data) {
 					$('input[data-coord="x1"]', $(element)).val(data.x);
-					$('input[data-coord="y1"]', $(element)).val((data.x + data.width));
-					$('input[data-coord="x2"]', $(element)).val(data.y);
+					$('input[data-coord="x2"]', $(element)).val((data.x + data.width));
+					$('input[data-coord="y1"]', $(element)).val(data.y);
 					$('input[data-coord="y2"]', $(element)).val((data.y + data.height));
 				}
 			});
