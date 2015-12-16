@@ -1,3 +1,14 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/hypeJunction/Elgg-cropper/compare/1.0.5...v1.0.0) (2015-12-16)
+
+
+### Features
+
+* **grunt:** improved release automation ([a28549a](https://github.com/hypeJunction/Elgg-cropper/commit/a28549a))
+* **support:** support earlier Elgg versions ([552dbdf](https://github.com/hypeJunction/Elgg-cropper/commit/552dbdf))
+
+
+
 <a name="1.0.5"></a>
 ## 1.0.5 (2015-12-04)
 
