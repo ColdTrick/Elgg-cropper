@@ -13,7 +13,7 @@
  * @uses $vars['input'] ID of the file input that can be used to update an image
  */
 $ratio = elgg_extract('ratio', $vars);
-if (!$ratio) {
+if (!isset($ratio)) {
 	$ratio = 1;
 }
 
