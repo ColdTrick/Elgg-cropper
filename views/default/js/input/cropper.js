@@ -15,6 +15,7 @@ define(function (require) {
 				return;
 			}
 			$img.cropper({
+				viewMode: 3,
 				aspectRatio: $(element).data('ratio'),
 				data: $img.data(),
 				crop: function (data) {
