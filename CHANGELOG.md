@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/hypeJunction/Elgg-cropper/compare/1.0.0...v1.0.1) (2015-12-29)
+
+
+### Bug Fixes
+
+* **input:** allow ratio to be empty ([3e7fcc0](https://github.com/hypeJunction/Elgg-cropper/commit/3e7fcc0))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/hypeJunction/Elgg-cropper/compare/1.0.5...v1.0.0) (2015-12-16)
 
