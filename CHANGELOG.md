@@ -1,3 +1,9 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/hypeJunction/Elgg-cropper/compare/1.0.2...v1.1.0) (2016-01-25)
+
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/hypeJunction/Elgg-cropper/compare/1.0.1...v1.0.2) (2015-12-29)
 
